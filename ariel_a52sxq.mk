@@ -12,14 +12,13 @@
 # WITHOUT WARRANTIES OR CONDITIONS OF ANY KIND, either express or implied.
 # See the License for the specific language governing permissions and
 # limitations under the License.
+#
 
-PRODUCT_MAKEFILES := \
-    $(LOCAL_DIR)/lineage_a52sxq.mk
+# Inherit Ariel device configuration
+$(call inherit-product, vendor/ariel/config/ariel_common.mk)
 
-COMMON_LUNCH_CHOICES := \
-    lineage_a52sxq-userdebug \
-    lineage_a52sxq-user \
-    lineage_a52sxq-eng \
-    ariel_a52sxq-userdebug \
-    ariel_a52sxq-eng
+# Inherit from Lineage configuration
+$(call inherit-product, device/samsung/a52sxq/lineage_a52sxq.mk)
 
+## Device identifier. This must come after all inclusions
+PRODUCT_NAME := ariel_a52sxq
