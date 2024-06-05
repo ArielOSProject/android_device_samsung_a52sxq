@@ -1,0 +1,12 @@
+[
+    {
+        "arielos": true,
+        "repository": "proprietary_vendor_samsung_a52sxq",
+        "target_path": "vendor/samsung/a52sxq"
+    },
+    {
+        "arielos": true,
+        "repository": "proprietary_vendor_samsung_sm7325-common",
+        "target_path": "vendor/samsung/sm7325-common"
+    }
+]
